@@ -1,11 +1,12 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
 }
+
 /**qui vanno gestite le divertentissime formattazioni del container nero**/
-#leftmenu{
+#leftmenu {
     width: 20%;
     max-width: 20%;
     height: 90vh;
@@ -16,28 +17,33 @@
     flex-direction: column;
     justify-content: space-around;
 }
-#leftmenu img{
-    max-width:60%;
+
+#leftmenu img {
+    max-width: 60%;
     margin: 3% 8%;
 }
-#options{
+
+#options {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     margin: 3% 8%;
 }
-#options span{
+
+#options span {
     color: rgb(121, 121, 121);
     font-weight: 800;
     font-size: 2em;
 }
-#playlist{
+
+#playlist {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
 }
-#playlist span{
-    color:rgb(121, 121, 121);
+
+#playlist span {
+    color: rgb(121, 121, 121);
     font-weight: 800;
     font-size: 2em;
     margin: 0% 8%;
@@ -45,140 +51,242 @@
 
 
 }
-#luser{
+
+#luser {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-#luser hr{
-    color: rgb(121,121,121);
+
+#luser hr {
+    color: rgb(121, 121, 121);
     width: 20em;
     max-width: 20em;
     margin-left: 10%;
-    
+
 
 }
-#luser span{
+
+#luser span {
     color: rgb(121, 121, 121);
     font-size: 2em;
     margin: 2% 4%;
 }
+
 /**qui sono finite le divertentissime formattazioni del container nero**/
-#Rcontainer{
-    min-height:90vh;
+#Rcontainer {
+    min-height: 90vh;
     height: 90vh;
     background-color: rgb(20, 25, 34);
     min-width: 80%;
     width: 80%;
     display: flex;
-    justify-content:flex-start;
-    align-items:center;
+    justify-content: flex-start;
+    align-items: center;
     align-content: center;
     flex-direction: column;
     overflow: auto;
 }
-#Rcontainer button{
+
+#Rcontainer button {
     border-radius: 30px;
     border: 1px solid white;
     color: white;
     padding: 1%;
     font-size: 1em;
-    background-color:rgba(0, 0, 0, 0.726) ;
+    background-color: rgba(0, 0, 0, 0.726);
     margin-right: 1%;
 }
-#upgradecell{
+
+#upgradecell {
     background-color: rgb(8, 11, 18);
     min-width: 100%;
-    width:100%;
+    width: 100%;
     max-height: 10vh;
     height: 10vh;
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
-footer{
-    min-height:10vh;
+
+footer {
+    min-height: 10vh;
     height: 10vh;
     background-color: rgb(66, 66, 66);
     min-width: 100%;
     width: 100%;
 }
-main{
+
+main {
     display: flex;
-    
+
 }
-#contentcell{
-    overflow: auto;
+
+#contentcell {
+    overflow-y: auto;
+    overflow-x: hidden;
 }
-#topnavigator{
+
+#topnavigator {
     color: rgb(121, 121, 121);
     display: flex;
     flex-wrap: nowrap;
-    justify-content:center;
+    justify-content: center;
     font-weight: 800;
     font-size: 1rem;
     margin: 2% 0%;
 }
-#topnavigator span{
+
+#topnavigator span {
     margin: 0% 1%;
 }
 
-#contentcell h2{
+#contentcell h2 {
     color: white;
     font-weight: 600;
     font-size: 2em;
+    margin: 1% 1%;
 }
+
 /**sezione1 musica**/
-.songcontainer{
+.songcontainer {
     display: flex;
     width: 100%;
     max-width: 100%;
 }
-.author{
+
+.author {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin:0% -1%;
+    margin: 0% -1%;
     padding: 0% 0%
 }
-.author img{
-    width:75%;
-    max-width:75%;
+
+.author img {
+    width: 75%;
+    max-width: 75%;
     margin-top: 15%;
 }
-.author h3{
+
+.author h3 {
     color: white;
     font-size: 1em;
     margin: 4% 0% 4% 0%;
 }
-.author span{
+
+.author span {
     color: rgb(121, 121, 121);
     margin: 1% 0%;
 
 }
+
 /** sezione 2 delle canzoni**/
-#songcontainer2{
+#songcontainer2 {
     display: flex;
     width: 100%;
     max-width: 100%;
+    margin: 2% 0%;
 }
-.author2{
+
+.author2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin:0% -1%;
+    margin: 0% -1%;
     padding: 0% 0%
-
 }
-.author2 h3{
+
+.author2 h3 {
     color: white;
     font-size: 1em;
     margin: 4% 0% 4% 0%;
 }
-.author2 span{
+
+.greyspan {
+    color: rgb(121, 121, 121);
+    margin: 1% 1%;
+}
+
+.author2 span {
     color: rgb(121, 121, 121);
     margin: 1% 0%;
+}
+
+.author2 img {
+    max-width: 58%;
+}
+
+/**sezione 2 canzoni consigliate end**/
+
+/**sezione 3 altri**/
+#songcontainer3 {
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    margin: 2% 0%;
+}
+
+/**sezione 3 altri end**/
+/**footer begin**/
+footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer img {
+    max-width: 15%;
+    margin: 0% -20%;
+}
+
+#flextxt {
+    display: flex;
+    width: 22%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+footer h2 {
+    color: white;
+    font-size: 1em;
+}
+
+#leftfooter{
+    display: flex;
+    align-content: space-around;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#icontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#icontainer i {
+    margin: 0% 25%;
+    color: white;
+}
+
+#player {
+    display: flex;
+}
+
+#player i {
+    color: white;
+    font-size: 2em;
+    margin: 0% 10%;
+
+}
+
+#controlpanel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
