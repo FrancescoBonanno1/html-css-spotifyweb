@@ -19,23 +19,24 @@
     max-width: 60%;
     margin: 3% 8%;
 }
-#smallogo{
-    display: none;
-}
-
-#options {
+#optionsflex{
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    margin: 3% 8%;
+    align-items: flex-start;
 }
-
-#options span {
-    color: rgb(121, 121, 121);
+.options i{
+    color: grey;
     font-weight: 800;
-    font-size: 1em;
+    font-size:1em;
 }
-
+.options span{
+    color: grey;
+    font-weight: 800;
+    font-size:1em;
+}
+#small-logo{
+    display: none;
+}
 #playlist {
     display: flex;
     flex-direction: column;
@@ -72,33 +73,6 @@
     font-size: 1em;
     margin: 2% 4%;
 }
-@media  screen and (min-width:768px) and (max-width: 1440px) {
-    #smalllogo{
-        display:none;
-    }
-    
-}
-@media screen and (max-width:768px) {
-    #leftmenu{
-        flex-wrap: wrap;
-    }
-    #smalllogo{
-        display:none;
-    }
-}
-@media screen and (max-width:480px) {
-    #playlist{
-        display: none;
-    }
-    #leftmenu img{
-        display: none;
-    }
-    #smalllogo{
-        display:block;
-    }
-
-}
-
 /**qui sono finite le divertentissime formattazioni del container nero**/
 #Rcontainer {
     height: 90vh;
@@ -111,10 +85,6 @@
     flex-direction: column;
     overflow: auto;
 }
-@media screen and (max-width:768px) {
-    #Rcontainer{
-        flex-wrap: wrap;
-    }}
 
 #Rcontainer button {
     border-radius: 30px;
@@ -159,7 +129,7 @@ main {
     justify-content: center;
     font-weight: 800;
     font-size: 1rem;
-    margin: 2% 0%;
+    margin: 1% 0%;
 }
 
 #topnavigator span {
@@ -167,6 +137,7 @@ main {
 }
 #topnavigator span:hover{
     border-bottom: 1px solid greenyellow;
+    cursor: pointer;
 }
 #contentcell h2 {
     color: white;
@@ -178,6 +149,7 @@ main {
 /**sezione1 musica**/
 .songcontainer {
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     max-width: 100%;
 }
@@ -192,8 +164,7 @@ main {
 }
 
 .author img {
-    width: 75%;
-    max-width: 75%;
+    width: 65%;
     margin-top: 15%;
 }
 
@@ -212,6 +183,7 @@ main {
 /** sezione 2 delle canzoni**/
 #songcontainer2 {
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     max-width: 100%;
     margin: 2% 0%;
@@ -243,7 +215,7 @@ main {
 }
 
 .author2 img {
-    max-width: 58%;
+    width: 58%;
 }
 
 /**sezione 2 canzoni consigliate end**/
@@ -354,3 +326,46 @@ footer h2 {
 .greyspanmusic {
     color: white;
 }
+
+@media screen and (max-width:768px) {
+    #leftmenu{
+        flex-wrap: wrap;
+    }
+    #Rcontainer{
+        flex-wrap: wrap;
+
+    }
+    #upgradecell{
+     position: fixed;
+     width: 80%;
+     z-index: 9;
+    }
+    #songcontainer2{
+        flex-wrap: nowrap;
+    }
+    #topnavigator{
+        margin-top: 20%;
+        flex-wrap: nowrap;
+        font-size: 0.7em;
+    }
+}
+
+@media screen and (max-width:480px) {
+    #leftmenu{
+    }
+    #playlist{
+        display: none;
+    }
+    #desktop-logo{
+        display: none;
+    }
+    #small-logo{
+        display:block;
+        width: 50%;
+        margin: 0% 0%;
+    }
+    .options span{
+        display: none;
+    }
+}
+
